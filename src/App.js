@@ -1,21 +1,28 @@
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <footer className='footer'>
-        <div className='contact'>
-          <h1>Contact Us</h1>
-          <a href="https://wa.me/+919789697906" target='_blank'>+91 97896 97906  </a><br></br>
-          <a href="mailto:bsaravanan933@gmail.com" class="btn hire-btn" target='_blank'>
-								virtualbuilders123@gmail.com
-							</a>
-          <p>Copyrights 2024. All Rights Reserved.</p>
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route,
+  
+} from "react-router-dom";
+import SingleFileUpload from './Components/SingleFileUpload';
+import Ideas from './Components/Ideas';
 
-          <h2 className='aa'>hi</h2>
-        </div>
-      </footer>
+
+
+function App() {
+
+  return (
+    <div className='App'>
+       <Ideas/>
+        <Routes>
+          <Route path="/Fileupload" element={<SingleFileUpload/>}/>
+        </Routes>
+      
     </div>
+      
   );
 }
 

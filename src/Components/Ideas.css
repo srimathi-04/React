@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.logoname{
+    float: left;
+}
+.menu{
+    align-items: center;
+}
+.menu:hover{
+  cursor: pointer;
+}
+.header nav ul li :active{
+  color: black;
+  text-decoration: underline;
+}
+
+
+.container {
+  text-align: center;
+  background-color: #121212;
+  color: navy;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: rgb(246, 236, 219);
+  padding: 20px;
+}
+
+.header h1 {
+  font-family: 'roboto';
+  margin: 0;
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header nav ul li {
+  margin: 0 15px;
+}
+
+.header nav ul li a {
+  color: navy;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main {
+  padding: 20px;
+}
+
+.main h2 {
+  margin: 20px 0;
+}
+
+
+.intro, .floor-plans, .project {
+  margin: 20px 0;
+}
+
+.intro h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.floor-plans h3, .project h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+  
+
+.blueprints {
+  
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  margin: 20px 0;
+}
+
+.blueprints img {
+  height: 200px;
+  max-width: 100%;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%; /* Adjust this width as needed */
+  margin: 20px auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px; 
+  margin-left: 9px;
+  margin-right: 10px;
+}
+
+.buttons1 {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px; 
+  margin-left: 0px;
+  margin-right: 25px;
+}
+
+.buttons button {
+  background-color: rgb(246, 236, 219);
+  color: navy;
+  border: solid;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.buttons1 button {
+  background-color: rgb(246, 236, 219);
+  color: navy;
+  border: solid;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.buttons button:hover {
+  background-color:white;
+}
+
+.buttons1 button:hover {
+  background-color:white;
+}
+
+.bpn{
+  font-size: 20px;
+}
+
+.bph{
+  font-size: 30px;
+}

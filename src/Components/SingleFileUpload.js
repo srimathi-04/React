@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import './Uploadfile.css';
 
-const SingleFileUpload = () => {
-   const [selectedFile, setSelectedFile] = useState(null);
-   const handleFileChange = (e) => {
-      setSelectedFile(e.target.files[0]);
-   };
+function SingleFileUpload() {
+
+      const [selectedFile, setSelectedFile] = useState(null);
+      const handleFileChange = (e) => {
+         setSelectedFile(e.target.files[0]);
+      };
 
    const handleUpload = async () => {
       if (!selectedFile) {
@@ -34,32 +35,48 @@ const SingleFileUpload = () => {
       }
    };
 
+   
+   
    return (
-   <div>
-    <section class="recognition-hero">
-		<div>
-			<div class="head">
-				<h1>Turn your Floor plan into <span>a digital plan</span></h1>
-				<p>Seamlessly convert a plan image into a full-customizable 3D project</p>
-				<button class="browse-file-button">Upload a plan</button>
-				<input class="browse-file visually-hidden" type="file" accept="image/jpeg,image/png,image/gif,application/pdf"/>
-			</div>
+   <><div>
+       
 
-			<div class="before-after" style={{width: "531px", height: "381px"}}>
+         <section class="recognition-hero">
+            <div>
+               <div class="head">
+                  <h1 className="title1">Turn your Floor plan into <span>a digital plan</span></h1>
+                  <p className="title2">Seamlessly convert a plan image into a full-customizable 3D project</p>
+                  <button class="browse-file-button">Upload a plan</button>
+                  <input class="browse-file visually-hidden" type="file" accept="image/jpeg,image/png,image/gif,application/pdf" />
+               </div>
 
-			    <div class="before-after-before-image" data-width="531" data-height="381"><img src="#" width="531" height="381" alt="" style={{maxwidth: "initial"}}/></div>
-                <div class="before-after-after-image" data-width="531" data-height="381" style={{width: "50%"}}><img src="#" width="531" height="381" alt="" style={{maxwidth: "initial"}}/></div>
-                <div class="before-after-track" style={{left: "50%"}}>
-                <div class="before-after-track-separator"></div>
-                <div class="before-after-track-thumb"></div>
+               <div class="before-after" style={{ width: "531px", height: "381px" }}>
+
+                  <div class="before-after-before-image" data-width="531" data-height="381"><img src="#" width="531" height="381" alt="" style={{ maxwidth: "initial" }} /></div>
+                  <div class="before-after-after-image" data-width="531" data-height="381" style={{ width: "50%" }}><img src="#" width="531" height="381" alt="" style={{ maxwidth: "initial" }} /></div>
+                  <div class="before-after-track" style={{ left: "50%" }}>
+                     <div class="before-after-track-separator"></div>
+                     <div class="before-after-track-thumb"></div>
+                  </div>
+               </div>
             </div>
+         </section>
+         <h2>Single File Upload</h2>
+         <input type="file" onChange={handleFileChange} />
+         <button onClick={handleUpload}>Upload</button>
+      </div><footer className='footer'>
+            <div className='contact'>
+               <h1>Contact Us</h1>
+               <a href="https://wa.me/+919789697906" target='_blank'>+91 97896 97906  </a><br></br>
+               <a href="mailto:bsaravanan933@gmail.com" class="btn hire-btn" target='_blank'>
+                  virtualbuilders123@gmail.com
+               </a>
+               <p>Copyrights 2024. All Rights Reserved.</p>
+
+
             </div>
-		</div>
-	</section>
-      <h2>Single File Upload</h2>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleUpload}>Upload</button>
-   </div>
+         </footer></>
    );
-};
+}
+
 export default SingleFileUpload;
