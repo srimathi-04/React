@@ -1,0 +1,52 @@
+
+  #buttons {
+    background-color: #e7fab4e1;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    min-height: 200px;
+    background-color: pink;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .button-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .button-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .button-item button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button-item button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-item p {
+    margin: 0;
+    color: #333;
+  }

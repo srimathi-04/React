@@ -5,6 +5,7 @@ function Samplee() {
     <div>
       Homepage
       <Link to='/Home'>Link it</Link>
+      <Link to='/Ideas'>Idea</Link>
     </div>
   )
 }

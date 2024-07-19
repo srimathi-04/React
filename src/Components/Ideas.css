@@ -4,28 +4,84 @@ body {
 }
 .logoname{
     float: left;
+    color: rgb(246, 236, 219);
+    background-color: navy;
 }
 .menu{
     align-items: center;
+    margin-right: 50px;
+    color: rgb(246, 236, 219);
+    background-color: navy;
+    display: inline;
+    
 }
-.menu:hover{
+.header nav ul li{
+  background-color: navy;
+}
+.header nav ul li :hover{
   cursor: pointer;
+  text-decoration: none;
+  background-color: rgb(246, 236, 219);
+  color: navy;
 }
-.header nav ul li :active{
-  color: black;
-  text-decoration: underline;
-}
+
 
 
 .container {
   text-align: center;
-  background-color: #121212;
+  
   color: navy;
   min-height: 100vh;
 }
 
+
+.about-content{
+  display: grid;
+  gap: 2rem;
+}
+
+.about-content{
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+
+.video-content video{
+  max-width: 550px;
+  margin-inline: auto;
+}
+
+.video-content{
+  grid-area: 1/2/2/3;
+}
+
+.Content{
+  text-align: center;
+}
+.Content{
+  text-align: left;
+  margin-left: 3px;
+}
+.Content h2{
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 30px;
+  font-weight: bold;
+  color: navy;
+}
+
+.Content p{
+  margin-bottom: 2rem;
+  margin-left: 20px;
+  line-height: 1.7rem;
+  font-size: 20px;
+  font-weight: 400;
+  color: navy;
+}
+
 .header {
-  background-color: rgb(246, 236, 219);
+  background-color: navy;
+  color: rgb(246, 236, 219);
   padding: 20px;
 }
 
@@ -37,9 +93,14 @@ body {
 .header nav ul {
   list-style: none;
   padding: 0;
+  margin-right: 5px;
   margin: 0;
   display: flex;
   justify-content: center;
+  color: rgb(246, 236, 219);
+  background-color: navy;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .header nav ul li {
@@ -47,10 +108,13 @@ body {
 }
 
 .header nav ul li a {
-  color: navy;
+  color: rgb(246, 236, 219);
+  background-color: navy;
   text-decoration: none;
   font-weight: bold;
 }
+
+
 
 .main {
   padding: 20px;
@@ -96,6 +160,10 @@ body {
   justify-content: space-evenly;
   width: 100%; /* Adjust this width as needed */
   margin: 20px auto;
+}
+
+#buttons {
+  background-color: rgb(246, 236, 219);
 }
 
 .buttons {
@@ -147,4 +215,47 @@ body {
 
 .bph{
   font-size: 30px;
+}
+
+.container {
+  display: grid;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 200px;
+  background-color: rgb(246, 236, 219);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-item {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.button-item:hover {
+  transform: scale(1.05);
+}
+
+.button-item button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+}
+
+
+.button-item p {
+  margin: 0;
+  color: #333;
 }
